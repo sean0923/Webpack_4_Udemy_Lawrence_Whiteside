@@ -12,7 +12,7 @@ module.exports = {
   },
   devServer: {
     contentBase: 'dist',
-    overlay: true,
+    overlay: true, // err can be seen entire browser
   },
   module: {
     rules: [
@@ -24,6 +24,23 @@ module.exports = {
           },
           {
             loader: 'css-loader',
+          },
+        ],
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].html',
+            },
+          },
+          {
+            loader: 'extract-loader',
+          },
+          {
+            loader: 'html-loader',
           },
         ],
       },
