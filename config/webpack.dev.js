@@ -62,7 +62,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'iamges/[name].[ext]',
+              name: 'images/[name].[ext]',
             },
           },
         ],

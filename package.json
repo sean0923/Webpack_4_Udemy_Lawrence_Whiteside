@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config=config/webpack.dev.js",
+    "dev": "nodemon src/server/main.js",
     "build": "webpack --config=config/webpack.dev.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.11",
