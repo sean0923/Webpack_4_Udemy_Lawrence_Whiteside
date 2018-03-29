@@ -41,6 +41,20 @@ module.exports = {
           },
           {
             loader: 'html-loader',
+            options: {
+              attrs: ["img:src"]
+            }
+          },
+        ],
+      },
+      {
+        test: /\.(jpg|gif|png)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: "iamges/[name].[ext]"
+            },
           },
         ],
       },
