@@ -17,6 +17,15 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+        ],
+        exclude: /node_modules/,
+      },
+      {
         test: /\.css$/,
         use: [
           {
@@ -42,8 +51,8 @@ module.exports = {
           {
             loader: 'html-loader',
             options: {
-              attrs: ["img:src"]
-            }
+              attrs: ['img:src'],
+            },
           },
         ],
       },
@@ -53,7 +62,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: "iamges/[name].[ext]"
+              name: 'iamges/[name].[ext]',
             },
           },
         ],

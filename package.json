@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.11",
     "extract-loader": "^2.0.1",
     "file-loader": "^1.1.11",
