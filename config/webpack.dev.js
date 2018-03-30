@@ -17,6 +17,7 @@ module.exports = {
     hot: true,
     overlay: true, // err can be seen entire browser
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -65,6 +66,6 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new HTMLWebpackPlugin({ template: "./src/index.html"})
+    new HTMLWebpackPlugin({ template: './src/index.html' }),
   ],
 };
