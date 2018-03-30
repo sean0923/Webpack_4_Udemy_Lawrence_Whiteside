@@ -6,6 +6,7 @@ const app = express();
 const webpack = require('webpack');
 const config = require('../../config/webpack.dev');
 const compiler = webpack(config);
+require('webpack-mild-compile')(compiler); // fix probs of dev-server rebuild multiple times
 
 // Define Middlewares -------------------------------------------------------------
 const webpackDevMiddleware = require('webpack-dev-middleware')(
