@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: {
@@ -12,6 +13,7 @@ module.exports = {
   },
   devServer: {
     contentBase: 'dist',
+    hot: true,
     overlay: true, // err can be seen entire browser
   },
   module: {
@@ -69,4 +71,5 @@ module.exports = {
       },
     ],
   },
+  plugins: [new webpack.HotModuleReplacementPlugin()],
 };
