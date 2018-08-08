@@ -25,5 +25,9 @@ use loader in reversed order.
 1. css loader gets css
 2. style-loader puts css into html
 
+### 004 better err render & html loader
+- 
+
+
 
 
