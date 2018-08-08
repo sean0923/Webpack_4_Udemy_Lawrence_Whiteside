@@ -76,3 +76,21 @@ npm install html-loader extract-loader file-loader
 npm install babel-loader
 
 - create .babelrc file
+{
+  "plugins": [
+    "transform-es2015-arrow-functions"
+  ]
+}
+
+- running npm run babel-main-js converts arrow func to normal func
+
+- add babel loader to webpack.dev.js (exclude nodemoduels)
+      {
+        test: /\.js$/,
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+        ],
+        exclude: /nodemodules/
+      },
