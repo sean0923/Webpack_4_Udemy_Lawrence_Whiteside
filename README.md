@@ -108,3 +108,26 @@ require('babel-register');
 
 npm install webpack-dev-middleware webpack-hot-middleware
 
+```
+plugins: [new webpack.HotModuleReplacementPlugin()],
+```
+
+```
+import webpack from 'webpack';
+import webpackDevMiddleware from 'webpack-dev-middleware';
+import webpackHotMiddleware from 'webpack-hot-middleware';
+
+import config from '../../config/webpack.dev';
+
+const complier = webpack(config);
+
+const app = express();
+
+const staticMiddleware = express.static('dist');
+
+app.use(webpackDevMiddleware(complier, config.devServer));
+app.use(webpackHotMiddleware(complier));
+app.use(staticMiddleware);
+```
+
+- build custom dev-server with express n webpack Dev & Hot Middleware
