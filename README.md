@@ -25,7 +25,7 @@ use loader in reversed order.
 1. css loader gets css
 2. style-loader puts css into html
 
-### 004 better err render & html loader
+### 004 better err render & html, file loader
 npm install html-loader extract-loader file-loader
 
 {
@@ -51,6 +51,26 @@ npm install html-loader extract-loader file-loader
 2. extract to seperate file
 3. name that seperate file as [name].html
 
+
+    {
+      loader: 'html-loader',
+      options: {
+        attrs: ['img:src'],
+      },
+    },
+  ],
+},
+{
+  test: /\.(jpg|jpeg|png|gif)$/,
+  use: [
+    {
+      loader: 'file-loader',
+      options: {
+        name: 'images/[name]-[hash:8].[ext]',
+      },
+    },
+  ],
+},
 
 
 
