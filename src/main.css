@@ -1,3 +1,17 @@
-body {
-  color: olive;
+* {
+  margin: 0;
+  background-color: #444;
+}
+
+
+
+h1 {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 5rem;
+  text-shadow: 0 0 20px black;
 }
