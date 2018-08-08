@@ -1,0 +1,23 @@
+{
+  "name": "webpack_4_udemy_lawrence_whiteside",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sean0923/Webpack_4_Udemy_Lawrence_Whiteside.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sean0923/Webpack_4_Udemy_Lawrence_Whiteside/issues"
+  },
+  "homepage": "https://github.com/sean0923/Webpack_4_Udemy_Lawrence_Whiteside#readme",
+  "dependencies": {
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
+}
