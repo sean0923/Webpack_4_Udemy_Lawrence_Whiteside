@@ -41,6 +41,9 @@ module.exports = {
           },
           {
             loader: 'html-loader',
+            options: {
+              attrs: ['img:src'],
+            },
           },
         ],
       },

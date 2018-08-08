@@ -3,11 +3,25 @@
   background-color: #444;
 }
 
-h1 {
+.center {
   height: 90vh;
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
+}
+
+.profile {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+img {
+  border-radius: 100%;
+  width: 400px;
+}
+
+h1 {
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 5rem;
