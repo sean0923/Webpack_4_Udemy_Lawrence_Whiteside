@@ -94,3 +94,14 @@ npm install babel-loader
         ],
         exclude: /nodemodules/
       },
+
+
+### 006-more babel
+require('babel-register');
+
+  "presets": [
+    "env"
+  ],
+
+- need to add above two to user import syntax at server code
+

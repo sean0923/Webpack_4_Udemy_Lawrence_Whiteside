@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "test-build": "webpack --config=config/webpack.dev.js",
     "dev-server": "webpack-dev-server --config=config/webpack.dev.js",
-    "babel-main-js": "babel src/main.js"
+    "babel-main-js": "babel src/main.js",
+    "server": "nodemon src/server/requires-at-server.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,10 @@
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
     "css-loader": "^1.0.0",
+    "express": "^4.16.3",
     "extract-loader": "^2.0.1",
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
