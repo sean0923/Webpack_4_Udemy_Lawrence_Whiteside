@@ -72,7 +72,7 @@ npm install html-loader extract-loader file-loader
   ],
 },
 
+### 005-babel basic
+npm install babel-loader
 
-
-
-
+- create .babelrc file
