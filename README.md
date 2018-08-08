@@ -97,6 +97,7 @@ npm install babel-loader
 
 
 ### 006-more babel
+npm install babel-register babel-preset-env
 require('babel-register');
 
   "presets": [
@@ -104,4 +105,6 @@ require('babel-register');
   ],
 
 - need to add above two to user import syntax at server code
+
+npm install webpack-dev-middleware webpack-hot-middleware
 
