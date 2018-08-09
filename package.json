@@ -8,7 +8,7 @@
     "test-build": "webpack --config=config/webpack.dev.js",
     "dev-server": "webpack-dev-server --config=config/webpack.dev.js",
     "babel-main-js": "babel src/main.js",
-    "server": "nodemon --watch config --watch src/server src/server/requires-at-server.js"
+    "server": "nodemon --inspect --watch config --watch src/server src/server/requires-at-server.js"
   },
   "repository": {
     "type": "git",

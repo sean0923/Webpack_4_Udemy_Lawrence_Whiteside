@@ -164,5 +164,25 @@ npm install html-webpack-plugin
     ```
 - inject: false -> for note rendering twice
 
+### 008-add-debugger-n-sorce-map
+
+- add --inspect after nodemon to enable server debugging at chrom
+
+"server": "nodemon --inspect --watch config --watch src/server src/server/requires-at-server.js"
+
+- add source-map under dev-server at webpack.dev.js
+
+  devServer: {
+    contentBase: 'dist',
+    overlay: true,
+    hot: true,
+    stats: {
+      colors: true,
+    },
+  },
+  ```
+  devtool: 'source-map',
+  ```
+
 
 

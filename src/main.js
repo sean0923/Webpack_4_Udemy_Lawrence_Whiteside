@@ -10,5 +10,5 @@ const func = async () => {
   const response = await axios.get('https://jsonplaceholder.typicode.com/users');
   console.log('response: ', response.data);
 };
-
+debugger
 func();
