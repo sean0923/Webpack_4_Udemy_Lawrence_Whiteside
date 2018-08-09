@@ -136,3 +136,33 @@ app.use(staticMiddleware);
 
 - At package.json script add nodemon --watch
 "server": "nodemon --watch config --watch src/server src/server/requires-at-server.js"
+
+npm install html-webpack-plugin
+
+        use: [
+          ```
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].html',
+            },
+          },
+          {
+            loader: 'extract-loader',
+          },
+          ```
+
+- html-webpack-plugin replace above code to 
+
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    ```
+    new HTMLWebpackPlugin({
+      template: './src/index.html',
+      inject: false,
+    }),    
+    ```
+- inject: false -> for note rendering twice
+
+
+
