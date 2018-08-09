@@ -8,7 +8,7 @@
     "test-build": "webpack --config=config/webpack.dev.js",
     "dev-server": "webpack-dev-server --config=config/webpack.dev.js",
     "babel-main-js": "babel src/main.js",
-    "server": "nodemon src/server/requires-at-server.js"
+    "server": "nodemon --watch config --watch src/server src/server/requires-at-server.js"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,12 @@
   },
   "homepage": "https://github.com/sean0923/Webpack_4_Udemy_Lawrence_Whiteside#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "css-loader": "^1.0.0",

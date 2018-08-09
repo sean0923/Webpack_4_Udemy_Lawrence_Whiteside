@@ -131,3 +131,8 @@ app.use(staticMiddleware);
 ```
 
 - build custom dev-server with express n webpack Dev & Hot Middleware
+
+### 007 add nodemon
+
+- At package.json script add nodemon --watch
+"server": "nodemon --watch config --watch src/server src/server/requires-at-server.js"
