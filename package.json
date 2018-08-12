@@ -1,44 +1,38 @@
 {
-  "name": "webpack_4_udemy_lawrence_whiteside",
+  "name": "webpack-course",
   "version": "1.0.0",
-  "description": "",
+  "description": "Webpack: Beyond the Basics Course",
+  "repository": "https://github.com/lawwantsin/webpack-course.git",
   "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --config=config/webpack.dev.js",
-    "build": "webpack --config=config/webpack.dev.js",
-    "dev": "nodemon --watch config --watch src/server src/server/main.js",
-    "babel": "babel src/app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sean0923/Webpack_4_Udemy_Lawrence_Whiteside.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sean0923/Webpack_4_Udemy_Lawrence_Whiteside/issues"
-  },
-  "homepage": "https://github.com/sean0923/Webpack_4_Udemy_Lawrence_Whiteside#readme",
+  "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
-    "babel-loader": "^7.1.5",
-    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
-    "babel-polyfill": "^6.26.0",
+    "ajv": "^6.5.0",
+    "babel-cli": "*",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-runtime": "*",
+    "babel-polyfill": "*",
     "babel-preset-env": "^1.7.0",
-    "babel-register": "^6.26.0",
-    "css-loader": "^1.0.0",
+    "css-loader": "^0.28.11",
     "express": "^4.16.3",
-    "extract-loader": "^2.0.1",
+    "extract-loader": "1.0.2",
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "style-loader": "^0.22.0",
-    "webpack": "^4.16.5",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-middleware": "^3.1.3",
-    "webpack-dev-server": "^3.1.5",
-    "webpack-hot-middleware": "^2.22.3"
+    "mini-css-extract-plugin": "^0.4.1",
+    "style-loader": "^0.20.3",
+    "url-loader": "0.6.2",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-middleware": "2.0.6",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-hot-middleware": "2.21.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --config=config/webpack.dev.js",
+    "build": "webpack --config=config/webpack.prod.js",
+    "build:dev": "webpack --config=config/webpack.dev.js",
+    "dev": "nodemon --inspect --watch config --watch src/server src/server/main.js",
+    "prod": "node src/server/main.js"
   }
 }
