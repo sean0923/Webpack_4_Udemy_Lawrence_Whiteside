@@ -1,8 +1,11 @@
+require('babel-runtime/regenerator');
 require('babel-polyfill');
 require('webpack-hot-middleware/client?reload=true');
 
-require('./index.html');
 require('./main.css');
+// require('./images/link.jpg');
+require('./index.html');
+// require('./app');
 
 import axios from 'axios';
 

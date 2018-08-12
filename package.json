@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test-build": "webpack --config=config/webpack.dev.js",
-    "dev-server": "webpack-dev-server --config=config/webpack.dev.js",
-    "babel-main-js": "babel src/main.js",
-    "server": "nodemon --inspect --watch config --watch src/server src/server/requires-at-server.js"
+    "start": "webpack-dev-server --config=config/webpack.dev.js",
+    "build": "webpack --config=config/webpack.dev.js",
+    "dev": "nodemon --watch config --watch src/server src/server/main.js",
+    "babel": "babel src/app.js"
   },
   "repository": {
     "type": "git",

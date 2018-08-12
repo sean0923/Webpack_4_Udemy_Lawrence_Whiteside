@@ -15,7 +15,6 @@ module.exports = {
   devServer: {
     contentBase: 'dist',
     overlay: true,
-    hot: true,
     stats: {
       colors: true,
     },
@@ -71,7 +70,6 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HTMLWebpackPlugin({
       template: './src/index.html',
-      inject: false,
     }),
   ],
 };
